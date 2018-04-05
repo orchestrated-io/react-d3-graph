@@ -68,9 +68,18 @@ export default class Node extends React.Component {
             opacity: this.props.opacity
         };
 
-        const textProps = {
+        const textAligmentProps = this.props.alignMiddle
+        ? {
+            alignmentBaseline: 'middle',
+            textAnchor: 'middle'
+          }
+        : {
             dx: this.props.dx || CONST.NODE_LABEL_DX,
-            dy: CONST.NODE_LABEL_DY,
+            dy: CONST.NODE_LABEL_DY
+          };  
+
+        const textProps = {
+            ...textAligmentProps,
             fontSize: this.props.fontSize,
             fontWeight: this.props.fontWeight,
             opacity: this.props.opacity

@@ -18,10 +18,10 @@
  * @memberof Graph/helper
  */
 import {
-    forceX as d3ForceX,
-    forceY as d3ForceY,
     forceSimulation as d3ForceSimulation,
-    forceManyBody as d3ForceManyBody
+    forceManyBody as d3ForceManyBody,
+    forceCollide as d3ForceCollide,
+    forceCenter as d3ForceCenter
 } from 'd3-force';
 
 import CONST from './graph.const';
@@ -43,18 +43,20 @@ const NODE_PROPS_WHITELIST = ['id', 'highlighted', 'x', 'y', 'index', 'vy', 'vx'
  * @memberof Graph/helper
  */
 function _createForceSimulation(width, height) {
-    const frx = d3ForceX(width / 2).strength(CONST.FORCE_X);
-    const fry = d3ForceY(height / 2).strength(CONST.FORCE_Y);
-
-    return d3ForceSimulation()
-        .force('charge', d3ForceManyBody().strength(CONST.FORCE_IDEAL_STRENGTH))
-        .force('x', frx)
-        .force('y', fry);
+    return (
+        d3ForceSimulation()
+            // push nodes apart to space them out
+            .force('charge', d3ForceManyBody().strength(-600))
+            // add some collision detection so they don't overlap
+            .force('collide', d3ForceCollide().radius(12))
+            // and draw them around the centre of the space
+            .force('center', d3ForceCenter(width / 2, height / 2))
+    );
 }
 
 /**
  * Get the correct node opacity in order to properly make decisions based on context such as currently highlighted node.
- * @param  {Object} node - the node object for whom we will generate properties.
+ * @param  {Object} node  - the node object for whom we will generate properties.
  * @param  {string} highlightedNode - same as {@link #buildGraph|highlightedNode in buildGraph}.
  * @param  {Object} highlightedLink - same as {@link #buildGraph|highlightedLink in buildGraph}.
  * @param  {Object} config - same as {@link #buildGraph|config in buildGraph}.
@@ -310,6 +312,7 @@ function buildNodeProps(node, config, nodeCallbacks = {}, highlightedNode, highl
         onMouseOverNode: nodeCallbacks.onMouseOverNode,
         onMouseOut: nodeCallbacks.onMouseOut,
         opacity,
+        alignMiddle: config.node.alignMiddle,
         renderLabel: config.node.renderLabel,
         size: nodeSize * t,
         stroke,

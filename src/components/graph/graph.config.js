@@ -150,11 +150,12 @@ export default {
         mouseCursor: 'pointer',
         opacity: 1,
         renderLabel: true,
-        size: 200,
+        size: 2000,
         strokeColor: 'none',
         strokeWidth: 1.5,
         svg: '',
-        symbolType: 'circle'
+        symbolType: 'circle',
+        alignMiddle: true
     },
     link: {
         color: '#d3d3d3',
