@@ -6,10 +6,10 @@ import utils from '../../../src/utils';
 
 jest.mock('d3-force');
 import {
-    forceX as d3ForceX,
-    forceY as d3ForceY,
     forceSimulation as d3ForceSimulation,
-    forceManyBody as d3ForceManyBody
+    forceManyBody as d3ForceManyBody,
+    forceCollide as d3ForceCollide,
+    forceCenter as d3ForceCenter
 } from 'd3-force';
 
 describe('Graph Helper', () => {
@@ -52,11 +52,12 @@ describe('Graph Helper', () => {
                 const props = graphHelper.buildNodeProps(that.node, that.config, undefined, 'id', undefined, 1);
 
                 expect(props).toEqual({
+                    alignMiddle: true,
                     className: 'node',
                     cursor: 'pointer',
                     cx: 1,
                     cy: 2,
-                    dx: 15.5,
+                    dx: 33.5,
                     fill: 'red',
                     fontSize: 12,
                     fontWeight: 'bold',
@@ -67,7 +68,7 @@ describe('Graph Helper', () => {
                     onMouseOverNode: undefined,
                     opacity: 1,
                     renderLabel: true,
-                    size: 200,
+                    size: 2000,
                     stroke: 'yellow',
                     strokeWidth: 2,
                     svg: 'file.svg',
@@ -93,11 +94,12 @@ describe('Graph Helper', () => {
                     );
 
                     expect(props).toEqual({
+                        alignMiddle: true,
                         className: 'node',
                         cursor: 'pointer',
                         cx: 1,
                         cy: 2,
-                        dx: 11.5,
+                        dx: 29.5,
                         fill: 'green',
                         fontSize: 8,
                         fontWeight: 'normal',
@@ -108,7 +110,7 @@ describe('Graph Helper', () => {
                         onMouseOverNode: undefined,
                         opacity: undefined,
                         renderLabel: true,
-                        size: 200,
+                        size: 2000,
                         stroke: 'none',
                         strokeWidth: 1.5,
                         svg: 'file.svg',
@@ -133,11 +135,12 @@ describe('Graph Helper', () => {
                     );
 
                     expect(props).toEqual({
+                        alignMiddle: true,
                         className: 'node',
                         cursor: 'pointer',
                         cx: 1,
                         cy: 2,
-                        dx: 11.5,
+                        dx: 29.5,
                         fill: 'green',
                         fontSize: 8,
                         fontWeight: 'normal',
@@ -148,7 +151,7 @@ describe('Graph Helper', () => {
                         onMouseOverNode: undefined,
                         opacity: undefined,
                         renderLabel: true,
-                        size: 200,
+                        size: 2000,
                         stroke: 'none',
                         strokeWidth: 1.5,
                         svg: 'file.svg',
@@ -165,8 +168,8 @@ describe('Graph Helper', () => {
                 const fr = 10;
                 const forceStub = jest.fn();
 
-                d3ForceX.mockImplementation(() => ({ strength: () => fr }));
-                d3ForceY.mockImplementation(() => ({ strength: () => fr }));
+                d3ForceCollide.mockImplementation(() => ({ radius: () => 10 }));
+                d3ForceCenter.mockImplementation(() => {});
                 d3ForceManyBody.mockImplementation(() => ({ strength: () => fr }));
                 forceStub.mockImplementation(() => ({ force: forceStub }));
                 d3ForceSimulation.mockImplementation(() => ({ force: forceStub }));

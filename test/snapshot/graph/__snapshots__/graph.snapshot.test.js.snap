@@ -680,11 +680,11 @@ exports[`Snapshot - Graph Component should match snapshot 1`] = `
           strokeWidth={1.5}
         />
         <text
-          dx={10.5}
-          dy=".35em"
+          alignmentBaseline="middle"
           fontSize={8}
           fontWeight="normal"
           opacity={1}
+          textAnchor="middle"
         >
           Harry
         </text>
@@ -708,11 +708,11 @@ exports[`Snapshot - Graph Component should match snapshot 1`] = `
           strokeWidth={1.5}
         />
         <text
-          dx={10.5}
-          dy=".35em"
+          alignmentBaseline="middle"
           fontSize={8}
           fontWeight="normal"
           opacity={1}
+          textAnchor="middle"
         >
           Sally
         </text>
@@ -736,11 +736,11 @@ exports[`Snapshot - Graph Component should match snapshot 1`] = `
           strokeWidth={1.5}
         />
         <text
-          dx={10.5}
-          dy=".35em"
+          alignmentBaseline="middle"
           fontSize={8}
           fontWeight="normal"
           opacity={1}
+          textAnchor="middle"
         >
           Mario
         </text>
@@ -764,11 +764,11 @@ exports[`Snapshot - Graph Component should match snapshot 1`] = `
           strokeWidth={1.5}
         />
         <text
-          dx={10.5}
-          dy=".35em"
+          alignmentBaseline="middle"
           fontSize={8}
           fontWeight="normal"
           opacity={1}
+          textAnchor="middle"
         >
           Sarah
         </text>
@@ -792,11 +792,11 @@ exports[`Snapshot - Graph Component should match snapshot 1`] = `
           strokeWidth={1.5}
         />
         <text
-          dx={10.5}
-          dy=".35em"
+          alignmentBaseline="middle"
           fontSize={8}
           fontWeight="normal"
           opacity={1}
+          textAnchor="middle"
         >
           Alice
         </text>
@@ -820,11 +820,11 @@ exports[`Snapshot - Graph Component should match snapshot 1`] = `
           strokeWidth={1.5}
         />
         <text
-          dx={10.5}
-          dy=".35em"
+          alignmentBaseline="middle"
           fontSize={8}
           fontWeight="normal"
           opacity={1}
+          textAnchor="middle"
         >
           Eveie
         </text>
@@ -848,11 +848,11 @@ exports[`Snapshot - Graph Component should match snapshot 1`] = `
           strokeWidth={1.5}
         />
         <text
-          dx={10.5}
-          dy=".35em"
+          alignmentBaseline="middle"
           fontSize={8}
           fontWeight="normal"
           opacity={1}
+          textAnchor="middle"
         >
           Peter
         </text>
@@ -876,11 +876,11 @@ exports[`Snapshot - Graph Component should match snapshot 1`] = `
           strokeWidth={1.5}
         />
         <text
-          dx={10.5}
-          dy=".35em"
+          alignmentBaseline="middle"
           fontSize={8}
           fontWeight="normal"
           opacity={1}
+          textAnchor="middle"
         >
           James
         </text>
@@ -904,11 +904,11 @@ exports[`Snapshot - Graph Component should match snapshot 1`] = `
           strokeWidth={1.5}
         />
         <text
-          dx={10.5}
-          dy=".35em"
+          alignmentBaseline="middle"
           fontSize={8}
           fontWeight="normal"
           opacity={1}
+          textAnchor="middle"
         >
           Carol
         </text>
@@ -932,11 +932,11 @@ exports[`Snapshot - Graph Component should match snapshot 1`] = `
           strokeWidth={1.5}
         />
         <text
-          dx={10.5}
-          dy=".35em"
+          alignmentBaseline="middle"
           fontSize={8}
           fontWeight="normal"
           opacity={1}
+          textAnchor="middle"
         >
           Nicky
         </text>
@@ -960,11 +960,11 @@ exports[`Snapshot - Graph Component should match snapshot 1`] = `
           strokeWidth={1.5}
         />
         <text
-          dx={10.5}
-          dy=".35em"
+          alignmentBaseline="middle"
           fontSize={8}
           fontWeight="normal"
           opacity={1}
+          textAnchor="middle"
         >
           Bobby
         </text>
@@ -988,11 +988,11 @@ exports[`Snapshot - Graph Component should match snapshot 1`] = `
           strokeWidth={1.5}
         />
         <text
-          dx={10.5}
-          dy=".35em"
+          alignmentBaseline="middle"
           fontSize={8}
           fontWeight="normal"
           opacity={1}
+          textAnchor="middle"
         >
           Frank
         </text>
@@ -1016,11 +1016,11 @@ exports[`Snapshot - Graph Component should match snapshot 1`] = `
           strokeWidth={1.5}
         />
         <text
-          dx={10.5}
-          dy=".35em"
+          alignmentBaseline="middle"
           fontSize={8}
           fontWeight="normal"
           opacity={1}
+          textAnchor="middle"
         >
           Lynne
         </text>
@@ -1044,11 +1044,11 @@ exports[`Snapshot - Graph Component should match snapshot 1`] = `
           strokeWidth={1.5}
         />
         <text
-          dx={10.5}
-          dy=".35em"
+          alignmentBaseline="middle"
           fontSize={8}
           fontWeight="normal"
           opacity={1}
+          textAnchor="middle"
         >
           Roger
         </text>
@@ -1072,11 +1072,11 @@ exports[`Snapshot - Graph Component should match snapshot 1`] = `
           strokeWidth={1.5}
         />
         <text
-          dx={10.5}
-          dy=".35em"
+          alignmentBaseline="middle"
           fontSize={8}
           fontWeight="normal"
           opacity={1}
+          textAnchor="middle"
         >
           Maddy
         </text>
@@ -1100,11 +1100,11 @@ exports[`Snapshot - Graph Component should match snapshot 1`] = `
           strokeWidth={1.5}
         />
         <text
-          dx={10.5}
-          dy=".35em"
+          alignmentBaseline="middle"
           fontSize={8}
           fontWeight="normal"
           opacity={1}
+          textAnchor="middle"
         >
           Sonny
         </text>
@@ -1128,11 +1128,11 @@ exports[`Snapshot - Graph Component should match snapshot 1`] = `
           strokeWidth={1.5}
         />
         <text
-          dx={10.5}
-          dy=".35em"
+          alignmentBaseline="middle"
           fontSize={8}
           fontWeight="normal"
           opacity={1}
+          textAnchor="middle"
         >
           Johan
         </text>
@@ -1156,11 +1156,11 @@ exports[`Snapshot - Graph Component should match snapshot 1`] = `
           strokeWidth={1.5}
         />
         <text
-          dx={10.5}
-          dy=".35em"
+          alignmentBaseline="middle"
           fontSize={8}
           fontWeight="normal"
           opacity={1}
+          textAnchor="middle"
         >
           Henry
         </text>
@@ -1184,11 +1184,11 @@ exports[`Snapshot - Graph Component should match snapshot 1`] = `
           strokeWidth={1.5}
         />
         <text
-          dx={10.5}
-          dy=".35em"
+          alignmentBaseline="middle"
           fontSize={8}
           fontWeight="normal"
           opacity={1}
+          textAnchor="middle"
         >
           Mikey
         </text>
@@ -1212,11 +1212,11 @@ exports[`Snapshot - Graph Component should match snapshot 1`] = `
           strokeWidth={1.5}
         />
         <text
-          dx={10.5}
-          dy=".35em"
+          alignmentBaseline="middle"
           fontSize={8}
           fontWeight="normal"
           opacity={1}
+          textAnchor="middle"
         >
           Elric
         </text>
